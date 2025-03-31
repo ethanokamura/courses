@@ -8,7 +8,7 @@ If at any point you get stuck, check out my [full course](https://www.perfectlin
 ---
 
 ## Project Setup  
-To follow along with this course, clone this [GitHub Repository](). This repository includes all the essential template files, helpful README files, and testing scripts.  
+To follow along with this course, clone this [GitHub Repository](http://github.com/ethanokamura/courses/tree/main/templates/maze). This repository includes all the essential template files, helpful README files, and testing scripts.  
 
 Your directory structure should look like this:  
 ```sh
