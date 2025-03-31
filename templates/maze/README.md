@@ -26,6 +26,26 @@ For this project, you will only need to write code inside the `MazeGenerator/` a
 
 ---
 
+## Cloning The Repository
+Because these templates are part of a larger repository, you have to clone specific templates. Unfortunately this is not directly suppored via GitHub, but there is a work-around. To do so, execute the following commands:
+
+```sh
+# clone the repository with no files checked out initially:
+git clone --no-checkout --depth 1 --filter=blob:none https://github.com/ethanokamura/courses/
+# navigate into the repo
+cd courses
+# enable sparse checkout
+git sparse-checkout init --cone
+# specify the subdirectory you want to clone (ie templates/maze)
+git sparse-checkout set templates/maze
+# checkout the files
+git checkout
+```
+
+Now, only the `templates/maze` directory will be available in your local copy.
+
+---
+
 ## Maze Generator  
 To generate the maze, we will use a data structure called a **disjoint set**. This structure is defined in `DisjointSet.h` and implemented in `DisjointSet.cpp`. It will be used in `MazeGenerator.cpp` to construct the maze.  
 
